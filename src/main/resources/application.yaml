@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/myemployees?allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    database: 0
+    host: 192.168.200.128
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.cache.dao.*: debug
+
